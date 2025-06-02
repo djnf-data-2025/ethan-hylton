@@ -86,13 +86,13 @@ Data details:
 
 #glimpse(YOUR_DATA)
 
-glimpse(data_2024)
+#glimpse(data_2024)
 
 ```
 # Fix dates
 ```{r}
-data_2024 <- data_2024 |> 
-  mutate(date_month = "Dec_2024")
+#data_2024 <- data_2024 |> 
+  #mutate(date_month = "Dec_2024")
 
 
 ```
@@ -100,17 +100,17 @@ data_2024 <- data_2024 |>
 
 
 # Import data for 2023, 2023
-/data/2023-12-Revenue.xlsx
-/data/2022-12-Revenue.xlsx
+#/data/2023-12-Revenue.xlsx
+#/data/2022-12-Revenue.xlsx
 
 
 
 
 ```{r}
-data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx", skip=2) |> 
-    clean_names()
-data_2022 <- read_excel("~/Docs/git-hub project/data/2022-12-Revenue.xlsx", skip=2) |>
-    clean_names()
+#data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx", skip=2) |> 
+    #clean_names()
+#data_2022 <- read_excel("~/Docs/git-hub project/data/2022-12-Revenue.xlsx", skip=2) |>
+    #clean_names()
 ```
 
 data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx, skip=2) |> 
