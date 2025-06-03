@@ -86,7 +86,7 @@ Data details:
 
 #glimpse(YOUR_DATA)
 
-glimpse(data_2024)
+#glimpse(data_2024)
 
 ```
 # Fix dates
