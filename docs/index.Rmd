@@ -74,7 +74,7 @@ Since mobile sports betting launched in Indiana in October 2019, the industry ha
 
 library(tidyverse)
 
-trends_data <- read_csv(multiTimeline.csv, skip = 1)  # skip the first row (Google adds metadata)
+trends_data <- read_csv("multiTimeline.csv", skip = 1)  # skip the first row (Google adds metadata)
 
 # View column names
 colnames(trends_data)
