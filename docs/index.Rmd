@@ -2,45 +2,68 @@
 title: "Ethan_Hylton_Indy_Star"
 output: html_document
 date: "2025-04-22"
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-A demo notebook for Dow Jones News Fund data interns
+**#rsw comment: cut the template material and focus on your project
+\##**
 
-During the week’s training, you will work on a project called Investigate Your Community to produce detailed story pitches relevant to their summer internship positions. The goal is to have the students research a topic relevant to your newsroom so they can get to work immediately at the internship. 
+~~A demo notebook for Dow Jones News Fund data interns~~
 
-Here are some examples from last year’s DJNF data journalism training:
+~~During the week’s training, you will work on a project called
+Investigate Your Community to produce detailed story pitches relevant to
+their summer internship positions. The goal is to have the students
+research a topic relevant to your newsroom so they can get to work
+immediately at the internship.~~
 
-Hannah Rosenberger, at ASI Media/Counselor magazine, produced this analysis on name, image and likeness trends: https://hrosenberger.github.io/ASI-NIL-Project/
+~~Here are some examples from last year’s DJNF data journalism
+training:~~
 
-Shifra Dayak, an intern at the Connecticut Mirror, produced this analysis of environment spill data: https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html.
+~~Hannah Rosenberger, at ASI Media/Counselor magazine, produced this
+analysis on name, image and likeness trends:
+<https://hrosenberger.github.io/ASI-NIL-Project/>~~
 
-Michael Zhang, an intern at the Houston Landing, explored local election data: https://michaelzhangreporter.github.io/Houston_Campaign_Finance/
+~~Shifra Dayak, an intern at the Connecticut Mirror, produced this
+analysis of environment spill data:
+<https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html>.~~
 
+~~Michael Zhang, an intern at the Houston Landing, explored local
+election data:
+<https://michaelzhangreporter.github.io/Houston_Campaign_Finance/>~~
 
-Here's what your newsroom suggested for a project
-I would like Ethan to look at Indiana gambling revenue for 2015-2024. The data is available in Excel format here https://www.in.gov/igc/publications/archived-monthly-revenue-reports/ the site also has YTD for 2025
+**#rsw comment: incorporate these newsroom notes into your own
+narrative**
 
+Here's what your newsroom suggested for a project I would like Ethan to
+look at Indiana gambling revenue for 2015-2024. The data is available in
+Excel format here
+<https://www.in.gov/igc/publications/archived-monthly-revenue-reports/>
+the site also has YTD for 2025
 
-I'm not sure what exactly we are looking for, but would like to be able to track total amount of money flowing through casinos -- including revenue trends for individual casinos -- and online sports betting sites; how much goes to the state and "winners"; and look at the growth and impact of online sports betting that became legal in October 2019. 
+I'm not sure what exactly we are looking for, but would like to be able
+to track total amount of money flowing through casinos -- including
+revenue trends for individual casinos -- and online sports betting
+sites; how much goes to the state and "winners"; and look at the growth
+and impact of online sports betting that became legal in October 2019.
 
-
-I am especially interested in the online sports betting because it is relatively new and doesn't require visiting casinos (which I believe also take sports bets). That would include an over-time look at the amount of money spent by Indiana online bettors and the increasing number of online options available. 
-
+I am especially interested in the online sports betting because it is
+relatively new and doesn't require visiting casinos (which I believe
+also take sports bets). That would include an over-time look at the
+amount of money spent by Indiana online bettors and the increasing
+number of online options available.
 
 Hopefully, an examination of the data will reveal other story paths.
 
-
 I'm happy to talk if you have questions or thoughts.
 
-
-Thanks again.
-Tim
-
-
+Thanks again. Tim
 
 This notebook helps you get started
 
 # Load software libraries
+
 ```{r}
 #install.packages("tidyverse")
 #install.packages("janitor")
@@ -58,17 +81,23 @@ library(rvest)
 
 Draft Pitch:
 
-Ethan Hylton
-301-219-4246 / Ethanjhylton@gmail.com
+Ethan Hylton 301-219-4246 /
+[Ethanjhylton\@gmail.com](mailto:Ethanjhylton@gmail.com){.email}
 6/2/2025
 
 Hello Mr. Herzong & Wells,
 
-I’d like to pitch a story that looks beyond the betting slips to explore how online sports betting has rapidly overtaken Indiana’s gambling market, and who’s profiting behind the scenes.
+I’d like to pitch a story that looks beyond the betting slips to explore
+how online sports betting has rapidly overtaken Indiana’s gambling
+market, and who’s profiting behind the scenes.
 
-Since mobile sports betting launched in Indiana in October 2019, the industry has exploded. While retail sportsbooks exist, they’ve been steadily eclipsed by online platforms, which now account for the vast majority of sports wagers in the state. The public-facing apps like FanDuel, DraftKings, BetMGM, and others are just one layer. What’s less understood is the network of companies, partnerships, and in-state casinos enabling this surge.
-
-
+Since mobile sports betting launched in Indiana in October 2019, the
+industry has exploded. While retail sportsbooks exist, they’ve been
+steadily eclipsed by online platforms, which now account for the vast
+majority of sports wagers in the state. The public-facing apps like
+FanDuel, DraftKings, BetMGM, and others are just one layer. What’s less
+understood is the network of companies, partnerships, and in-state
+casinos enabling this surge.
 
 ```{r}
 
@@ -90,45 +119,61 @@ colnames(trends_data)
 
 ```
 
+Each mobile sportsbook in Indiana must partner with a local
+brick-and-mortar casino. That’s opened the door for a mix of major
+national brands and global players to take hold of the market: **#rsw
+comment: great to figure out this unusual competitive partnership. is
+that the case in other states? good progress to nail down these business
+partnerships**
 
-Each mobile sportsbook in Indiana must partner with a local brick-and-mortar casino. That’s opened the door for a mix of major national brands and global players to take hold of the market:
+-   FanDuel (owned by Flutter Entertainment, based in Dublin) is
+    partnered with [Belterra Casino.]{.underline}**#rsw comment
+    independent or owned by a British chain?**
 
-FanDuel (owned by Flutter Entertainment, based in Dublin) is partnered with Belterra Casino.
+-   DraftKings (publicly traded in the U.S.) works with [Ameristar
+    Casino in East Chicago]{.underline}.**#rsw comment independent or
+    owned by a chain?**
 
-DraftKings (publicly traded in the U.S.) works with Ameristar Casino in East Chicago.
+-   BetMGM is backed by MGM Resorts and UK-based Entain, partnered with
+    Belterra.
 
-BetMGM is backed by MGM Resorts and UK-based Entain, partnered with Belterra.
+-   Caesars Online operates under the Caesars Entertainment umbrella,
+    tied to its physical casino holdings. **#rsw comment: so maybe
+    Caesars has the less to lose since it is vertically integrated?**
 
-Caesars Online operates under the Caesars Entertainment umbrella, tied to its physical casino holdings.
+-   BetRivers is run by Rush Street Interactive, a Chicago-based
+    company, via [French Lick Casino.]{.underline}**#rsw comment
+    independent or owned by a chain?**
 
-BetRivers is run by Rush Street Interactive, a Chicago-based company, via French Lick Casino.
+-   PointsBet (recently acquired by Fanatics) partnered with Hollywood
+    Casino. **#rsw comment. hollywood is a chain, I'm pretty sure**
 
-PointsBet (recently acquired by Fanatics) partnered with Hollywood Casino.
+-   Unibet, from Sweden’s Kindred Group, is paired with [Horseshoe
+    Hammond.]{.underline} **#rsw comment independent or owned by a
+    chain?**
 
-Unibet, from Sweden’s Kindred Group, is paired with Horseshoe Hammond.
+-   BetAmerica (owned by Churchill Downs) has been rebranded or absorbed
+    into TwinSpires.
 
-BetAmerica (owned by Churchill Downs) has been rebranded or absorbed into TwinSpires.
+-   Betway, owned by Super Group (a global brand based in Malta), is
+    also active in Indiana.\
+    \
+    This story would explore: The growth and dominance of online betting
+    over retail locations, using state revenue data
 
-Betway, owned by Super Group (a global brand based in Malta), is also active in Indiana.
-	
+How Google search interest in sports betting has sustained high levels
+since 2019. The little-known partnerships between global corporations
+and local Indiana casinos
 
-This story would explore:
-The growth and dominance of online betting over retail locations, using state revenue data
+Whether Indiana is becoming a model — or cautionary tale — for other
+states following suit
 
-
-How Google search interest in sports betting has sustained high levels since 2019
-The little-known partnerships between global corporations and local Indiana casinos
-
-
-Whether Indiana is becoming a model — or cautionary tale — for other states following suit
-
-
-I believe there’s real value in tracing both the cultural shift and the business web that powers Indiana’s mobile betting boom.
+I believe there’s real value in tracing both the cultural shift and the
+business web that powers Indiana’s mobile betting boom.
 
 # Load your data
 
 2024
-
 
 ```{r}
 
@@ -148,8 +193,8 @@ I believe there’s real value in tracing both the cultural shift and the busine
 
 Data details:
 
-
 # Explore the data types
+
 ```{r}
 
 #glimpse(YOUR_DATA)
@@ -157,7 +202,9 @@ Data details:
 #glimpse(data_2024)
 
 ```
+
 # Fix dates
+
 ```{r}
 #data_2024 <- data_2024 |> 
   #mutate(date_month = "Dec_2024")
@@ -165,14 +212,9 @@ Data details:
 
 ```
 
-
-
 # Import data for 2023, 2023
-#/data/2023-12-Revenue.xlsx
-#/data/2022-12-Revenue.xlsx
 
-
-
+#/data/2023-12-Revenue.xlsx #/data/2022-12-Revenue.xlsx
 
 ```{r}
 #data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx", skip=2) |> 
@@ -181,29 +223,26 @@ Data details:
     #clean_names()
 ```
 
-data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx, skip=2) |> 
-    clean_names()
-    
-data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx, skip=2) |> 
-    clean_names()
+data_2023 \<- read_excel("\~/Docs/git-hub
+project/data/2023-12-Revenue.xlsx, skip=2) \|\> clean_names()
 
-data_2022 <- read_excel("/Users/ethan_hylton/Docs/git-hub project/data/2022-12-Revenue.xlsx", skip=2) |> 
-    clean_names()
-    
+data_2023 \<- read_excel("\~/Docs/git-hub
+project/data/2023-12-Revenue.xlsx, skip=2) \|\> clean_names()
 
-# Questions 
+data_2022 \<- read_excel("/Users/ethan_hylton/Docs/git-hub
+project/data/2022-12-Revenue.xlsx", skip=2) \|\> clean_names()
+
+# Questions
 
 Write down questions you want answered:
 
-
-
 # Data Details
+
 Monthly report in PDF form
-https://www.in.gov/igc/files/2025-03-Revenue.pdf
+<https://www.in.gov/igc/files/2025-03-Revenue.pdf>
 
-
-
-Check this annual report for context: https://www.in.gov/igc/files/FY2024-Annual.pdf
+Check this annual report for context:
+<https://www.in.gov/igc/files/FY2024-Annual.pdf>
 
 Revenue reports:
-https://www.in.gov/igc/publications/archived-monthly-revenue-reports/
+<https://www.in.gov/igc/publications/archived-monthly-revenue-reports/>
