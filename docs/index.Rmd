@@ -64,7 +64,7 @@ Ethan Hylton
 
 Hello Mr. Herzong & Wells,
 
-I’d like to pitch a story that looks beyond the betting slips to explore how online sports betting has rapidly overtaken Indiana’s gambling market — and who’s profiting behind the scenes.
+I’d like to pitch a story that looks beyond the betting slips to explore how online sports betting has rapidly overtaken Indiana’s gambling market, and who’s profiting behind the scenes.
 
 Since mobile sports betting launched in Indiana in October 2019, the industry has exploded. While retail sportsbooks exist, they’ve been steadily eclipsed by online platforms, which now account for the vast majority of sports wagers in the state. The public-facing apps like FanDuel, DraftKings, BetMGM, and others are just one layer. What’s less understood is the network of companies, partnerships, and in-state casinos enabling this surge.
 
@@ -80,12 +80,12 @@ trends_data <- read_csv("multiTimeline.csv", skip = 1)  # skip the first row (Go
 colnames(trends_data)
 
 # Plot the trend over time
-ggplot(trends_data, aes(x = Week, y = `sports betting: (United States)`)) +
-  geom_line(color = "blue", size = 1) +
-  labs(title = "Google Trends: 'Sports Betting' in Indiana",
-       x = "Date",
-       y = "Interest Over Time") +
-  theme_minimal()
+#ggplot(trends_data, aes(x = Week, y = `sports betting: (United States)`)) +
+  #geom_line(color = "blue", size = 1) +
+  #labs(title = "Google Trends: 'Sports Betting' in Indiana",
+       #x = "Date",
+       #y = "Interest Over Time") +
+  #theme_minimal()
 
 
 ```

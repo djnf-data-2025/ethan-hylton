@@ -422,6 +422,70 @@ library(rvest)</code></pre>
 ##     guess_encoding</code></pre>
 <pre class="r"><code>library(lubridate)
 library(rvest)</code></pre>
+<p>Draft Pitch:</p>
+<p>Ethan Hylton 301-219-4246 / <a href="mailto:Ethanjhylton@gmail.com" class="email">Ethanjhylton@gmail.com</a> 6/2/2025</p>
+<p>Hello Mr. Herzong &amp; Wells,</p>
+<p>I’d like to pitch a story that looks beyond the betting slips to
+explore how online sports betting has rapidly overtaken Indiana’s
+gambling market, and who’s profiting behind the scenes.</p>
+<p>Since mobile sports betting launched in Indiana in October 2019, the
+industry has exploded. While retail sportsbooks exist, they’ve been
+steadily eclipsed by online platforms, which now account for the vast
+majority of sports wagers in the state. The public-facing apps like
+FanDuel, DraftKings, BetMGM, and others are just one layer. What’s less
+understood is the network of companies, partnerships, and in-state
+casinos enabling this surge.</p>
+<pre class="r"><code>library(tidyverse)
+
+trends_data &lt;- read_csv(&quot;multiTimeline.csv&quot;, skip = 1)  # skip the first row (Google adds metadata)</code></pre>
+<pre><code>## Rows: 258 Columns: 2
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (1): Month
+## dbl (1): Sports betting: (Indiana)
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code># View column names
+colnames(trends_data)</code></pre>
+<pre><code>## [1] &quot;Month&quot;                     &quot;Sports betting: (Indiana)&quot;</code></pre>
+<pre class="r"><code># Plot the trend over time
+#ggplot(trends_data, aes(x = Week, y = `sports betting: (United States)`)) +
+  #geom_line(color = &quot;blue&quot;, size = 1) +
+  #labs(title = &quot;Google Trends: &#39;Sports Betting&#39; in Indiana&quot;,
+       #x = &quot;Date&quot;,
+       #y = &quot;Interest Over Time&quot;) +
+  #theme_minimal()</code></pre>
+<p>Each mobile sportsbook in Indiana must partner with a local
+brick-and-mortar casino. That’s opened the door for a mix of major
+national brands and global players to take hold of the market:</p>
+<p>FanDuel (owned by Flutter Entertainment, based in Dublin) is
+partnered with Belterra Casino.</p>
+<p>DraftKings (publicly traded in the U.S.) works with Ameristar Casino
+in East Chicago.</p>
+<p>BetMGM is backed by MGM Resorts and UK-based Entain, partnered with
+Belterra.</p>
+<p>Caesars Online operates under the Caesars Entertainment umbrella,
+tied to its physical casino holdings.</p>
+<p>BetRivers is run by Rush Street Interactive, a Chicago-based company,
+via French Lick Casino.</p>
+<p>PointsBet (recently acquired by Fanatics) partnered with Hollywood
+Casino.</p>
+<p>Unibet, from Sweden’s Kindred Group, is paired with Horseshoe
+Hammond.</p>
+<p>BetAmerica (owned by Churchill Downs) has been rebranded or absorbed
+into TwinSpires.</p>
+<p>Betway, owned by Super Group (a global brand based in Malta), is also
+active in Indiana.</p>
+<p>This story would explore: The growth and dominance of online betting
+over retail locations, using state revenue data</p>
+<p>How Google search interest in sports betting has sustained high
+levels since 2019 The little-known partnerships between global
+corporations and local Indiana casinos</p>
+<p>Whether Indiana is becoming a model — or cautionary tale — for other
+states following suit</p>
+<p>I believe there’s real value in tracing both the cultural shift and
+the business web that powers Indiana’s mobile betting boom.</p>
 </div>
 <div id="load-your-data" class="section level1">
 <h1>Load your data</h1>
