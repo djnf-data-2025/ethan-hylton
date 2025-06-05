@@ -10,57 +10,11 @@ editor_options:
 **#rsw comment: cut the template material and focus on your project
 \##**
 
-~~A demo notebook for Dow Jones News Fund data interns~~
-
-~~During the week’s training, you will work on a project called
-Investigate Your Community to produce detailed story pitches relevant to
-their summer internship positions. The goal is to have the students
-research a topic relevant to your newsroom so they can get to work
-immediately at the internship.~~
-
-~~Here are some examples from last year’s DJNF data journalism
-training:~~
-
-~~Hannah Rosenberger, at ASI Media/Counselor magazine, produced this
-analysis on name, image and likeness trends:
-<https://hrosenberger.github.io/ASI-NIL-Project/>~~
-
-~~Shifra Dayak, an intern at the Connecticut Mirror, produced this
-analysis of environment spill data:
-<https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html>.~~
-
-~~Michael Zhang, an intern at the Houston Landing, explored local
-election data:
-<https://michaelzhangreporter.github.io/Houston_Campaign_Finance/>~~
 
 **#rsw comment: incorporate these newsroom notes into your own
 narrative**
 
-Here's what your newsroom suggested for a project I would like Ethan to
-look at Indiana gambling revenue for 2015-2024. The data is available in
-Excel format here
-<https://www.in.gov/igc/publications/archived-monthly-revenue-reports/>
-the site also has YTD for 2025
 
-I'm not sure what exactly we are looking for, but would like to be able
-to track total amount of money flowing through casinos -- including
-revenue trends for individual casinos -- and online sports betting
-sites; how much goes to the state and "winners"; and look at the growth
-and impact of online sports betting that became legal in October 2019.
-
-I am especially interested in the online sports betting because it is
-relatively new and doesn't require visiting casinos (which I believe
-also take sports bets). That would include an over-time look at the
-amount of money spent by Indiana online bettors and the increasing
-number of online options available.
-
-Hopefully, an examination of the data will reveal other story paths.
-
-I'm happy to talk if you have questions or thoughts.
-
-Thanks again. Tim
-
-This notebook helps you get started
 
 # Load software libraries
 
@@ -78,6 +32,24 @@ library(rvest)
 
 
 ```
+
+
+<pre> ```{=html} <iframe src='https://flo.uri.sh/visualisation/23600704/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe> <div style='width:100%!;margin-top:4px!important;text-align:right!important;'> <a class='flourish-credit' href='https://public.flourish.studio/visualisation/23600704/?utm_source=embed&utm_campaign=visualisation/23600704' target='_top' style='text-decoration:none!important'> <img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a> </div> ``` </pre>
+
+
+Part 2:
+
+Hello Mr. Herzong & Wells,
+
+I’ve embedded an interactive Flourish chart comparing monthly revenue growth between retail and online sports betting in Indiana since legalization. What stands out immediately is how aggressively online betting has surged past retail, the gap widens dramatically starting in 2020, reinforcing the market dominance of digital platforms over time. You can visually trace how retail receipts plateau while online gross receipts skyrocket, especially after the COVID-era acceleration.
+
+That said, to make room for more historical context and potentially expand the dataset going back further, I may revise the chart to display quarterly totals instead of monthly. It’ll reduce visual clutter while still preserving the broader trend narrative.
+I’m also developing a second chart that’ll break down which online sportsbooks have performed best over time. This brand-level data should help us illustrate not just the dominance of the digital sector, but which companies are winning the market share battle month-over-month. I think that insight will pair nicely with the current visual and strengthen our overall argument. This won’t take long for me to develop. 
+
+Beyond the charts, I plan to do more digging into Indiana’s political landscape around gambling. What caught my attention is that many of the state’s “brick-and-mortar” casinos appear to have formal partnerships with online sportsbooks, something that doesn’t seem to be common nationwide. I need to confirm this through further research, but it could speak to a unique regulatory framework or business strategy that’s worth highlighting in the piece.
+
+
+
 
 Draft Pitch:
 
@@ -103,18 +75,7 @@ casinos enabling this surge.
 
 library(tidyverse)
 
-trends_data <- read_csv("multiTimeline.csv", skip = 1)  # skip the first row (Google adds metadata)
 
-# View column names
-colnames(trends_data)
-
-# Plot the trend over time
-#ggplot(trends_data, aes(x = Week, y = `sports betting: (United States)`)) +
-  #geom_line(color = "blue", size = 1) +
-  #labs(title = "Google Trends: 'Sports Betting' in Indiana",
-       #x = "Date",
-       #y = "Interest Over Time") +
-  #theme_minimal()
 
 
 ```
@@ -165,7 +126,7 @@ How Google search interest in sports betting has sustained high levels
 since 2019. The little-known partnerships between global corporations
 and local Indiana casinos
 
-Whether Indiana is becoming a model — or cautionary tale — for other
+Whether Indiana is becoming a model, or cautionary tale for other
 states following suit
 
 I believe there’s real value in tracing both the cultural shift and the
@@ -191,58 +152,5 @@ business web that powers Indiana’s mobile betting boom.
 
 ```
 
-Data details:
-
-# Explore the data types
-
-```{r}
-
-#glimpse(YOUR_DATA)
-
-#glimpse(data_2024)
-
-```
-
-# Fix dates
-
-```{r}
-#data_2024 <- data_2024 |> 
-  #mutate(date_month = "Dec_2024")
 
 
-```
-
-# Import data for 2023, 2023
-
-#/data/2023-12-Revenue.xlsx #/data/2022-12-Revenue.xlsx
-
-```{r}
-#data_2023 <- read_excel("~/Docs/git-hub project/data/2023-12-Revenue.xlsx", skip=2) |> 
-    #clean_names()
-#data_2022 <- read_excel("~/Docs/git-hub project/data/2022-12-Revenue.xlsx", skip=2) |>
-    #clean_names()
-```
-
-data_2023 \<- read_excel("\~/Docs/git-hub
-project/data/2023-12-Revenue.xlsx, skip=2) \|\> clean_names()
-
-data_2023 \<- read_excel("\~/Docs/git-hub
-project/data/2023-12-Revenue.xlsx, skip=2) \|\> clean_names()
-
-data_2022 \<- read_excel("/Users/ethan_hylton/Docs/git-hub
-project/data/2022-12-Revenue.xlsx", skip=2) \|\> clean_names()
-
-# Questions
-
-Write down questions you want answered:
-
-# Data Details
-
-Monthly report in PDF form
-<https://www.in.gov/igc/files/2025-03-Revenue.pdf>
-
-Check this annual report for context:
-<https://www.in.gov/igc/files/FY2024-Annual.pdf>
-
-Revenue reports:
-<https://www.in.gov/igc/publications/archived-monthly-revenue-reports/>
