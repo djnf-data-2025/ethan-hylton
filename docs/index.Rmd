@@ -28,9 +28,13 @@ Data Analysis Process:
 
 This project began with downloading and cleaning hundreds of rows of monthly revenue data from the Indiana Gaming Commission’s public reports, a process made unnecessarily difficult by inconsistent formatting and file types. After creating a functional dataset using Google Sheets and RStudio, I produced visualizations to compare the performance of retail versus online sports betting operations. I also investigated the companies behind Indiana’s top platforms, uncovering how out-of-state brands partner with in-state casinos to gain legal access while keeping the bulk of profits.
 
-FanDuel, an Irish-American multinational sports betting and gambling company. (owned by Flutter Entertainment, based in Dublin) is partnered with Belterra Casino. 
-DraftKings (publicly traded in the U.S.) works with Ameristar Casino in East Chicago. 
-BetMGM is backed by MGM Resorts and UK-based Entain, partnered with Belterra.
+- FanDuel, an Irish-American multinational sports betting and gambling company. (owned by Flutter Entertainment, based in Dublin) is partnered with Belterra Casino. 
+- DraftKings (publicly traded in the U.S.) works with Ameristar Casino in East Chicago. 
+- BetMGM is backed by MGM Resorts and UK-based Entain, partnered with Belterra.
+-   BetRivers is run by Rush Street Interactive, an independent company based in Chicago, via [French Lick Casino.]{.underline}
+
+-   PointsBet was recently acquired by Fanatics, Inc. is a global digital sports platform that consists of several businesses, including licensed sports merchandise, trading cards and collectibles, sports betting and iGaming, special events, and live commerce. (Locally partnered with Hollywood Casino)
+
 
 
 Next Steps:
@@ -67,63 +71,26 @@ library(rvest)
 
 ```
 
-<iframe src='https://flo.uri.sh/visualisation/23600704/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/23600704/?utm_source=embed&utm_campaign=visualisation/23600704' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
-
-Part 2:
-
-Hello Mr. Herzong & Wells,
-
-I’ve embedded an interactive Flourish chart comparing monthly revenue growth between retail and online sports betting in Indiana since legalization. What stands out immediately is how aggressively online betting has surged past retail, the gap widens dramatically starting in 2020, reinforcing the market dominance of digital platforms over time. You can visually trace how retail receipts plateau while online gross receipts skyrocket, especially after the COVID-era acceleration.
-
-<iframe src='https://flo.uri.sh/visualisation/23636754/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/23636754/?utm_source=embed&utm_campaign=visualisation/23636754' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
-
-
-That said, to make room for more historical context and potentially expand the dataset going back further, I may revise the chart to display quarterly totals instead of monthly. It’ll reduce visual clutter while still preserving the broader trend narrative.
-I’m also developing a second chart that’ll break down which online sportsbooks have performed best over time. This brand-level data should help us illustrate not just the dominance of the digital sector, but which companies are winning the market share battle month-over-month. I think that insight will pair nicely with the current visual and strengthen our overall argument. This won’t take long for me to develop. 
-
-Beyond the charts, I plan to do more digging into Indiana’s political landscape around gambling. What caught my attention is that many of the state’s “brick-and-mortar” casinos appear to have formal partnerships with online sportsbooks, something that doesn’t seem to be common nationwide. I need to confirm this through further research, but it could speak to a unique regulatory framework or business strategy that’s worth highlighting in the piece.
 
 
 
 
 
 
-<pre> ```{=html} <iframe src='https://flo.uri.sh/visualisation/23600704/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe> <div style='width:100%!;margin-top:4px!important;text-align:right!important;'> <a class='flourish-credit' href='https://public.flourish.studio/visualisation/23600704/?utm_source=embed&utm_campaign=visualisation/23600704' target='_top' style='text-decoration:none!important'> <img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a> </div> ``` </pre>
-
-
-Part 2:
-
-Hello Mr. Herzong & Wells,
-
-I’ve embedded an interactive Flourish chart comparing monthly revenue growth between retail and online sports betting in Indiana since legalization. What stands out immediately is how aggressively online betting has surged past retail, the gap widens dramatically starting in 2020, reinforcing the market dominance of digital platforms over time. You can visually trace how retail receipts plateau while online gross receipts skyrocket, especially after the COVID-era acceleration.
-
-That said, to make room for more historical context and potentially expand the dataset going back further, I may revise the chart to display quarterly totals instead of monthly. It’ll reduce visual clutter while still preserving the broader trend narrative.
-I’m also developing a second chart that’ll break down which online sportsbooks have performed best over time. This brand-level data should help us illustrate not just the dominance of the digital sector, but which companies are winning the market share battle month-over-month. I think that insight will pair nicely with the current visual and strengthen our overall argument. This won’t take long for me to develop. 
-
-Beyond the charts, I plan to do more digging into Indiana’s political landscape around gambling. What caught my attention is that many of the state’s “brick-and-mortar” casinos appear to have formal partnerships with online sportsbooks, something that doesn’t seem to be common nationwide. I need to confirm this through further research, but it could speak to a unique regulatory framework or business strategy that’s worth highlighting in the piece.
 
 
 
 
-Draft Pitch:
 
-Ethan Hylton 301-219-4246 /
-[Ethanjhylton\@gmail.com](mailto:Ethanjhylton@gmail.com){.email}
-6/2/2025
 
-Hello Mr. Herzong & Wells,
 
-I’d like to pitch a story that looks beyond the betting slips to explore
-how online sports betting has rapidly overtaken Indiana’s gambling
-market, and who’s profiting behind the scenes.
 
-Since mobile sports betting launched in Indiana in October 2019, the
-industry has exploded. While retail sportsbooks exist, they’ve been
-steadily eclipsed by online platforms, which now account for the vast
-majority of sports wagers in the state. The public-facing apps like
-FanDuel, DraftKings, BetMGM, and others are just one layer. What’s less
-understood is the network of companies, partnerships, and in-state
-casinos enabling this surge.
+
+
+
+
+
+
 
 ```{r}
 
@@ -134,57 +101,10 @@ library(tidyverse)
 
 ```
 
-Each mobile sportsbook in Indiana must partner with a local
-brick-and-mortar casino. That’s opened the door for a mix of major
-national brands and global players to take hold of the market: **#rsw
-comment: great to figure out this unusual competitive partnership. is
-that the case in other states? good progress to nail down these business
-partnerships**
 
--   FanDuel (owned by Flutter Entertainment, based in Dublin) is
-    partnered with [Belterra Casino.]{.underline}**#rsw comment
-    independent or owned by a British chain?**
 
--   DraftKings (publicly traded in the U.S.) works with [Ameristar
-    Casino in East Chicago]{.underline}.**#rsw comment independent or
-    owned by a chain?**
 
--   BetMGM is backed by MGM Resorts and UK-based Entain, partnered with
-    Belterra.
 
--   Caesars Online operates under the Caesars Entertainment umbrella,
-    tied to its physical casino holdings. **#rsw comment: so maybe
-    Caesars has the less to lose since it is vertically integrated?**
-
--   BetRivers is run by Rush Street Interactive, a Chicago-based
-    company, via [French Lick Casino.]{.underline}**#rsw comment
-    independent or owned by a chain?**
-
--   PointsBet (recently acquired by Fanatics) partnered with Hollywood
-    Casino. **#rsw comment. hollywood is a chain, I'm pretty sure**
-
--   Unibet, from Sweden’s Kindred Group, is paired with [Horseshoe
-    Hammond.]{.underline} **#rsw comment independent or owned by a
-    chain?**
-
--   BetAmerica (owned by Churchill Downs) has been rebranded or absorbed
-    into TwinSpires.
-
--   Betway, owned by Super Group (a global brand based in Malta), is
-    also active in Indiana.\
-    \
-    This story would explore: The growth and dominance of online betting
-    over retail locations, using state revenue data
-
-How Google search interest in sports betting has sustained high levels
-since 2019. The little-known partnerships between global corporations
-and local Indiana casinos
-
-Whether Indiana is becoming a model, or cautionary tale for other
-states following suit
-
-I believe there’s real value in tracing both the cultural shift and the
-business web that powers Indiana’s mobile betting boom.
 
 # Load your data
 
