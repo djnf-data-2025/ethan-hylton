@@ -33,6 +33,26 @@ library(rvest)
 
 ```
 
+<iframe src='https://flo.uri.sh/visualisation/23600704/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/23600704/?utm_source=embed&utm_campaign=visualisation/23600704' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+Part 2:
+
+Hello Mr. Herzong & Wells,
+
+I’ve embedded an interactive Flourish chart comparing monthly revenue growth between retail and online sports betting in Indiana since legalization. What stands out immediately is how aggressively online betting has surged past retail, the gap widens dramatically starting in 2020, reinforcing the market dominance of digital platforms over time. You can visually trace how retail receipts plateau while online gross receipts skyrocket, especially after the COVID-era acceleration.
+
+<iframe src='https://flo.uri.sh/visualisation/23636754/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/23636754/?utm_source=embed&utm_campaign=visualisation/23636754' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+
+That said, to make room for more historical context and potentially expand the dataset going back further, I may revise the chart to display quarterly totals instead of monthly. It’ll reduce visual clutter while still preserving the broader trend narrative.
+I’m also developing a second chart that’ll break down which online sportsbooks have performed best over time. This brand-level data should help us illustrate not just the dominance of the digital sector, but which companies are winning the market share battle month-over-month. I think that insight will pair nicely with the current visual and strengthen our overall argument. This won’t take long for me to develop. 
+
+Beyond the charts, I plan to do more digging into Indiana’s political landscape around gambling. What caught my attention is that many of the state’s “brick-and-mortar” casinos appear to have formal partnerships with online sportsbooks, something that doesn’t seem to be common nationwide. I need to confirm this through further research, but it could speak to a unique regulatory framework or business strategy that’s worth highlighting in the piece.
+
+
+
+
+
 
 <pre> ```{=html} <iframe src='https://flo.uri.sh/visualisation/23600704/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe> <div style='width:100%!;margin-top:4px!important;text-align:right!important;'> <a class='flourish-credit' href='https://public.flourish.studio/visualisation/23600704/?utm_source=embed&utm_campaign=visualisation/23600704' target='_top' style='text-decoration:none!important'> <img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a> </div> ``` </pre>
 
