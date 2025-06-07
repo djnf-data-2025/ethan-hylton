@@ -1,19 +1,53 @@
 ---
-title: "Ethan_Hylton_Indy_Star"
+title: "Indiana Sports Betting: Who Are the Real Winners?"
 output: html_document
-date: "2025-04-22"
+date: "2025-06-07"
 editor_options: 
   markdown: 
     wrap: 72
 ---
+Since Indiana legalized sports betting in September 2019, the state has seen a massive shift in how Hoosiers place their bets. While former Governor Eric Holcomb promised that legalization would spur economic growth, create jobs, and benefit Indiana-based casinos, the reality playing out in the numbers tells a different story. Online sports betting outlets like DraftKings, FanDuel, and BetMGM have outpaced traditional retail casinos in revenue month after month, raising important questions about who truly benefits from this new gambling landscape. 
+This project analyzes those numbers and examines the opaque ecosystem of online operators profiting off Indiana’s laws.
 
-**#rsw comment: cut the template material and focus on your project
-\##**
+<iframe src='https://flo.uri.sh/visualisation/23600704/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/23600704/?utm_source=embed&utm_campaign=visualisation/23600704' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+“By modernizing our laws, this legislation will spur positive economic growth for our state and for an industry that employs over 11,000 Hoosiers,” Governor Holcomb said in 2019. Unfortunately, a look at the data suggests most of that growth may be happening outside state lines. 
+Sports betting isn’t new, but the way it’s done in Indiana is evolving rapidly. As legislative discussions around gambling regulation resurface and other states look to emulate Indiana’s sports betting infrastructure, now is the time to scrutinize the foundations of Indiana’s model. With 2025 state budget conversations approaching, it’s timely to ask whether this system is truly serving Indiana’s economic and civic goals.
+
+<iframe src='https://flo.uri.sh/visualisation/23636754/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/23636754/?utm_source=embed&utm_campaign=visualisation/23636754' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+Who Cares?:
+This story matters to every Indiana taxpayer, policymaker, and sports bettor. Tax revenues and consumer protections hinge on how this system is managed. If out-of-state corporations are capturing the majority of revenue while Indiana sees limited reinvestment, that has major implications for economic justice and public policy. For local journalism and civic accountability, the risk is clear: without scrutiny, Indiana’s model may become a precedent for unchecked corporate gain in the sports betting industry.
+
+Failing to report on this story allows the state’s sports betting system to continue unchecked, potentially replicating a flawed structure in other emerging markets. It prevents voters and lawmakers from making informed decisions on future legislation, and continues to hide the link between power and profit from the public. 
+
+Target Audience:
+This story targets Indiana residents, especially sports bettors, legislators, regulators, and a broader national audience following gambling trends, digital markets, and regulatory policy.
+
+Data Analysis Process:
+
+This project began with downloading and cleaning hundreds of rows of monthly revenue data from the Indiana Gaming Commission’s public reports, a process made unnecessarily difficult by inconsistent formatting and file types. After creating a functional dataset using Google Sheets and RStudio, I produced visualizations to compare the performance of retail versus online sports betting operations. I also investigated the companies behind Indiana’s top platforms, uncovering how out-of-state brands partner with in-state casinos to gain legal access while keeping the bulk of profits.
+
+FanDuel, an Irish-American multinational sports betting and gambling company. (owned by Flutter Entertainment, based in Dublin) is partnered with Belterra Casino. 
+DraftKings (publicly traded in the U.S.) works with Ameristar Casino in East Chicago. 
+BetMGM is backed by MGM Resorts and UK-based Entain, partnered with Belterra.
 
 
-**#rsw comment: incorporate these newsroom notes into your own
-narrative**
+Next Steps:
+Continue analyzing revenue data through YTD 2025.
 
+
+Compare tax revenue collected by the state to profits collected by online operators.
+
+
+Dig into the ethics investigation surrounding Spectacle Entertainment and former Governor Holcomb’s connections to casino-linked firms.
+
+
+Interview economic analysts and casino workers to evaluate whether job creation and local impact promises have held up.
+
+
+Conclusion:
+As Indiana becomes a model for sports betting expansion, it’s critical to scrutinize the structure and outcomes of its legislation. Are we watching the democratization of gambling access, or the quiet consolidation of profit by digital middlemen? This story doesn’t just follow the money, it asks who’s winning, and at what cost.
 
 
 # Load software libraries
@@ -158,11 +192,7 @@ business web that powers Indiana’s mobile betting boom.
 
 ```{r}
 
-# 
-# YOUR_DATA <- read.csv("../data/XXXXX.csv") |> 
-#     clean_names()
 
-# 1: Load Excel files (2019–2025)
 
 
 
