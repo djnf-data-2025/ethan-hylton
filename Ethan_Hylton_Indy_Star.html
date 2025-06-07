@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2025-06-07" />
+<meta name="date" content="2025-04-22" />
 
-<title>Indiana Sports Gambling Success</title>
+<title>Ethan_Hylton_Indy_Star</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -349,8 +349,8 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Indiana Sports Gambling Success</h1>
-<h4 class="date">2025-06-07</h4>
+<h1 class="title toc-ignore">Ethan_Hylton_Indy_Star</h1>
+<h4 class="date">2025-04-22</h4>
 
 </div>
 
@@ -436,9 +436,76 @@ with online sportsbooks, something that doesn’t seem to be common
 nationwide. I need to confirm this through further research, but it
 could speak to a unique regulatory framework or business strategy that’s
 worth highlighting in the piece.</p>
+<div id="load-software-libraries" class="section level1">
+<h1>Load software libraries</h1>
+<pre class="r"><code>#install.packages(&quot;tidyverse&quot;)
+#install.packages(&quot;janitor&quot;)
+#install.packages(&quot;readxl&quot;)
+#install.packages(&quot;rvest&quot;)
+library(tidyverse)</code></pre>
+<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.5.2     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+## ✔ purrr     1.0.4     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<pre class="r"><code>library(janitor)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;janitor&#39;
+## 
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     chisq.test, fisher.test</code></pre>
+<pre class="r"><code>library(readxl)
+library(rvest)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;rvest&#39;
+## 
+## The following object is masked from &#39;package:readr&#39;:
+## 
+##     guess_encoding</code></pre>
+<pre class="r"><code>library(lubridate)
+library(rvest)</code></pre>
+</div>
+<div id="load-your-data" class="section level1">
+<h1>Load your data</h1>
+<p>2024</p>
+<pre class="r"><code># 
+# YOUR_DATA &lt;- read.csv(&quot;../data/XXXXX.csv&quot;) |&gt; 
+#     clean_names()
+
+# 1: Load Excel files (2019–2025)</code></pre>
+<p>Data details:</p>
+</div>
+<div id="explore-the-data-types" class="section level1">
+<h1>Explore the data types</h1>
+<pre class="r"><code>#glimpse(YOUR_DATA)
+
+#glimpse(data_2024)</code></pre>
+</div>
+<div id="fix-dates" class="section level1">
+<h1>Fix dates</h1>
+<pre class="r"><code>#data_2024 &lt;- data_2024 |&gt; 
+  #mutate(date_month = &quot;Dec_2024&quot;)</code></pre>
+</div>
+<div id="import-data-for-2023-2023" class="section level1">
+<h1>Import data for 2023, 2023</h1>
+<p>/data/2023-12-Revenue.xlsx /data/2022-12-Revenue.xlsx</p>
+<pre><code>clean_names()</code></pre>
+</div>
 <div id="questions" class="section level1">
 <h1>Questions</h1>
 <p>Write down questions you want answered:</p>
+</div>
+<div id="data-details" class="section level1">
+<h1>Data Details</h1>
+<p>Monthly report in PDF form <a href="https://www.in.gov/igc/files/2025-03-Revenue.pdf" class="uri">https://www.in.gov/igc/files/2025-03-Revenue.pdf</a></p>
+<p>Check this annual report for context: <a href="https://www.in.gov/igc/files/FY2024-Annual.pdf" class="uri">https://www.in.gov/igc/files/FY2024-Annual.pdf</a></p>
+<p>Revenue reports: <a href="https://www.in.gov/igc/publications/archived-monthly-revenue-reports/" class="uri">https://www.in.gov/igc/publications/archived-monthly-revenue-reports/</a></p>
 </div>
 
 

@@ -1,8 +1,9 @@
 ---
-title: Indiana Sports Gambling Success
+title: "Ethan_Hylton_Indy_Star"
 output: html_document
-date: "2025-06-07"
+date: "2025-04-22"
 ---
+
 
 
 Draft Pitch:
@@ -71,6 +72,88 @@ Beyond the charts, I plan to do more digging into Indiana’s political landscap
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Load software libraries
+```{r}
+#install.packages("tidyverse")
+#install.packages("janitor")
+#install.packages("readxl")
+#install.packages("rvest")
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(rvest)
+library(lubridate)
+library(rvest)
+
+
+```
+
+
+# Load your data
+
+2024
+
+
+```{r}
+
+# 
+# YOUR_DATA <- read.csv("../data/XXXXX.csv") |> 
+#     clean_names()
+
+# 1: Load Excel files (2019–2025)
+
+
+
+
+
+
+
+```
+
+Data details:
+
+
+# Explore the data types
+```{r}
+
+#glimpse(YOUR_DATA)
+
+#glimpse(data_2024)
+
+```
+# Fix dates
+```{r}
+#data_2024 <- data_2024 |> 
+  #mutate(date_month = "Dec_2024")
+
+
+```
+
+
+
+# Import data for 2023, 2023
+/data/2023-12-Revenue.xlsx
+/data/2022-12-Revenue.xlsx
+
+
+
+
+
+    clean_names()
     
 
 # Questions 
@@ -78,3 +161,14 @@ Beyond the charts, I plan to do more digging into Indiana’s political landscap
 Write down questions you want answered:
 
 
+
+# Data Details
+Monthly report in PDF form
+https://www.in.gov/igc/files/2025-03-Revenue.pdf
+
+
+
+Check this annual report for context: https://www.in.gov/igc/files/FY2024-Annual.pdf
+
+Revenue reports:
+https://www.in.gov/igc/publications/archived-monthly-revenue-reports/
