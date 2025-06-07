@@ -72,26 +72,6 @@ library(rvest)
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```{r}
 
 library(tidyverse)
@@ -99,24 +79,9 @@ library(tidyverse)
 
 
 
+
+
 ```
-
-
-
-
-
-
-# Load your data
-
-2024
-
-```{r}
-
-
-
-
-
-
 
 
 
